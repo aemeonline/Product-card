@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Regular.woff2") format("woff2"),
+    url("fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cako";
+  src: url("fonts/Cako-Regular.woff2") format("woff2"),
+    url("fonts/Cako-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: cako, black;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f2ebe3;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 320px; /* Margen izquierdo y derecho */
+}
+
+.container img {
+  max-width: 300px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.product-text {
+  padding: 0 20px; /* Padding solo izquierda y derecha */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Asegura que el texto comience desde la parte superior */
+}
+
+h5 {
+  margin: 0;
+  color: #1a761b;
+  font-family: "Inter", sans-serif;
+  font-size: x-small;
+  font-style: thin;
+  letter-spacing: 0.3em;
+}
+
+h2 {
+  margin: 10px 0;
+  color: #1a761b;
+  font-family: cako;
+  font: optional;
+  font-weight: bold;
+}
+
+h6 {
+  margin: 10px 0;
+  color: #555;
+  font-size: medium;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 12%;
+}
+
+h4 {
+  margin: 10px 0;
+  color: #999;
+  text-decoration: line-through;
+  align-self: start;
+  transform: translateY(-10px);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+}
+
+.action-container {
+  display: flex; /* Cambié a flex para alinear en una fila */
+  gap: 5px; /* Espacio entre el botón y el ícono */
+  justify-content: center;
+  margin-left: auto;
+  align-content: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #ee6b2c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px; /* Ajusta según lo necesario */
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  display: inline-block;
+  font-weight: normal;
+}
+
+button:hover {
+  background-color: #be4a14;
+}
+
+.like-button {
+  width: 40px; /* Ajusta el tamaño del ícono */
+  height: auto;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  filter: brightness(0.7);
+}
